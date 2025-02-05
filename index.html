@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join WhatsApp Group</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .join-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: #25D366;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .join-button:hover {
+            background-color: #128C7E;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Join Our WhatsApp Group</h1>
+        <p>Click the button below to join our WhatsApp group:</p>
+        <button class="join-button" onclick="joinWhatsAppGroup()">Join Group</button>
+    </div>
+
+    <script>
+        function joinWhatsAppGroup() {
+            const groupLink = "https://chat.whatsapp.com/your-group-invite-link"; // Replace with your WhatsApp group invite link
+            window.location.href = groupLink;
+        }
+    </script>
+</body>
+</html>
