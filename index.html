@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join WhatsApp Group</title>
+    <title>Join WhatsApp Group or Channel</title>
     <style>
         body {
             display: flex;
@@ -13,9 +13,15 @@
             background-color: #f0f0f0;
             margin: 0;
             font-family: Arial, sans-serif;
+            text-align: center;
         }
         .container {
             text-align: center;
+        }
+        .team-name {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
         }
         .join-button {
             padding: 15px 30px;
@@ -26,6 +32,7 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s;
+            margin: 10px;
         }
         .join-button:hover {
             background-color: #128C7E;
@@ -34,15 +41,21 @@
 </head>
 <body>
     <div class="container">
-        <h1>Join Our WhatsApp Group</h1>
-        <p>Click the button below to join our WhatsApp group:</p>
-        <button class="join-button" onclick="joinWhatsAppGroup()">Join Group</button>
+        <div class="team-name">TEAM BLACK HAT</div>
+        <p>Click the button below to join our WhatsApp group or channel:</p>
+        <button class="join-button" onclick="joinWhatsAppGroup()">Join WhatsApp Group</button>
+        <button class="join-button" onclick="joinWhatsAppChannel()">Join WhatsApp Channel</button>
     </div>
 
     <script>
         function joinWhatsAppGroup() {
             const groupLink = "https://chat.whatsapp.com/your-group-invite-link"; // Replace with your WhatsApp group invite link
             window.location.href = groupLink;
+        }
+
+        function joinWhatsAppChannel() {
+            const channelLink = "https://chat.whatsapp.com/your-channel-invite-link"; // Replace with your WhatsApp channel invite link
+            window.location.href = channelLink;
         }
     </script>
 </body>
